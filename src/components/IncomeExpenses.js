@@ -9,7 +9,7 @@ const IncomeExpenses = () => {
 		.reduce((acc, val) => (acc += val))
 		.toFixed(2);
 	const expense = Math.abs(
-		amounts.filter((val) => val < 0).reduce((acc, val) => (acc += val))
+		amounts.filter((val) => val < 0).reduce((acc, val) => (acc += val), 0)
 	).toFixed(2);
 
 	return (
