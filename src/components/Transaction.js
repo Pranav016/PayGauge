@@ -8,7 +8,7 @@ const Transaction = ({ id, text, amount }) => {
 				{text}{' '}
 				<span>
 					{sign}${Math.abs(amount)}
-				</span>
+				</span>{' '}
 				<button className='delete-btn'>x</button>
 			</li>
 		</>
