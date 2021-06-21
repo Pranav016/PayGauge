@@ -9,6 +9,11 @@ export const AppReducer = (state, action) => {
 					({ id }) => id !== action.payload
 				),
 			};
+		case ACTIONS.AddTransaction:
+			return {
+				...state,
+				transactions: [...state.transactions, action.payload],
+			};
 		default:
 			return state;
 	}
